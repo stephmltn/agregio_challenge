@@ -237,3 +237,24 @@ SELECT COUNT(1) FROM fct_production; -- 199 rows
 SELECT * FROM fct_production;
 
 
+------ MART tables
+
+---- mart_production_summary table
+
+-- Selectionner les attributs nécessaires
+-- Somme pour total_energy_generated
+-- Window function Average pour average_daily_energy (en scannant les datapoints quotidients)
+
+---- mart_site_performance
+
+-- Attribut, somme et quotient. Semble straightforward.
+
+
+------ Analyses
+
+-- Attributs, puis Average sur 10 latest records (option de filtrer avec Window function)
+
+
+
+
+
